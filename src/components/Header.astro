@@ -1,0 +1,25 @@
+---
+//Icons
+import Olympus from './icons/Olympus.astro';
+import { HomeIcon } from '@heroicons/react/24/solid'
+import { RectangleStackIcon } from '@heroicons/react/24/solid'
+import { Square3Stack3DIcon } from '@heroicons/react/24/solid'
+import { MagnifyingGlassIcon } from '@heroicons/react/24/solid'
+import { UserIcon } from '@heroicons/react/24/outline'
+---
+<header class="flex justify-between items-center pt-6 py-6 mb-6 w-[1280px] mx-auto">
+	<nav class="flex gap-8 items-center">
+		<a href="/"><Olympus class="rounded-full size-[72px]"/></a>
+		<a class="flex gap-2 items-center hover:bg-[#fcd34d40] bg-[#fcd34d40] text-sm md:text-lg px-3 py-0.5 rounded-md text-orange-400" href="/"><HomeIcon className='w-5' /> Inicio</a>
+		<a class="flex gap-2 items-center hover:bg-gray-800 px-3 py-0.5 rounded-md text-sm md:text-lg" href="/series"><RectangleStackIcon className='w-5' /> Series</a>
+		<a class="flex gap-2 items-center hover:bg-gray-800 px-3 py-0.5 rounded-md text-sm md:text-lg" href="/capitulos"><Square3Stack3DIcon className='w-5' /> Capitulos</a>
+	</nav>
+	<div class="flex gap-6 items-center">
+		<button class="relative rounded-full aspect-square hover:bg-gray-800 transition-background-color p-2">
+			<MagnifyingGlassIcon className='w-5' />
+		</button>
+		<a href="/signin" class="aspect-square rounded-full hover:bg-gray-800 transition-background-color p-2">
+			<UserIcon className='w-5' />
+		</a>
+	</div>
+</header>
